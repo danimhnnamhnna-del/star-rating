@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.rating-container {
+  text-align: center;
+  background: rgb(223, 229, 230);
+  padding: 5rem;
+  border-radius: 50px; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.stars {
+  font-size: 5rem; 
+  cursor: pointer;
+  display: flex;
+  gap: 20px; 
+  direction: ltr;
+}
+
+.star {
+  color: #cccccc;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.star.filled {
+  color: #f1310f;
+}
+
+.star.half-filled {
+  background: linear-gradient(90deg, #f1310f 50%, #cccccc 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#rating-text {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #236132;
+}
